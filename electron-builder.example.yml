@@ -1,0 +1,7 @@
+appId: net.crazyoptimist.electron-auto-update
+linux:
+  target:
+    - deb
+publish:
+  provider: github
+  token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

@@ -4,7 +4,9 @@
   "description": "electron application auto-update proof of concept",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder build --publish never",
+    "deploy": "electron-builder build --publish always"
   },
   "author": "CrazyOptimist<crazyoptimist@mail.com>",
   "license": "MIT",
@@ -14,5 +16,9 @@
   },
   "dependencies": {
     "electron-updater": "^4.3.9"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/crazyoptimist/electron-auto-update-poc.git"
   }
 }
